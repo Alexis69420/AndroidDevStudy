@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">caclulatrice</string>
+    <string name="title">Calculator</string>
+    <string name="result" translatable="false">0</string>
 </resources>
