@@ -10,58 +10,77 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
     >
 
-        <Button
-            android:id="@+id/buttonAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:onClick="add"/>
+        <EditText
+            android:id="@+id/editext"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:inputType="textWebEditText"
+            android:textSize="20pt" />
 
-        <Button
-            android:id="@+id/buttonMin"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="sub"
-            android:text="-" />
+            android:orientation="horizontal"
+            android:layout_weight="1">
 
-        <Button
-            android:id="@+id/buttonMul"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="mul"
-            android:text="*" />
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add"
+                android:text="+" />
 
-        <Button
-            android:id="@+id/buttonDiv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="div"
-            android:text="/" />
+            <Button
+                android:id="@+id/buttonMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sub"
+                android:text="-" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/buttonMul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="mul"
+                android:text="*" />
+
+            <Button
+                android:id="@+id/buttonDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="div"
+                android:text="/" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="validate"
+                android:text="=" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="validate"
-            android:text="=" />
+            android:orientation="horizontal">
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/result"
             android:layout_gravity="center"
             android:gravity="center"
+            android:text="@string/result"
+            android:textSize="20pt"
             />
-
-        <EditText
-            android:id="@+id/editext"
-            android:layout_width="294dp"
-            android:layout_height="58dp"
-            android:inputType="textWebEditText"
-            android:textSize="20pt" />
 
 
     </LinearLayout>
