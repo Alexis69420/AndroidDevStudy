@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">IntentionSend</string>
+    <string name="app_name" translatable="false">IntentionSend</string>
+    <string name="sendText">Send</string>
 </resources>
