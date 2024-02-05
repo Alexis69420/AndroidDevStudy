@@ -36,8 +36,9 @@
             android:id="@+id/sendButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sendText"
-            android:layout_weight="0.0125"/>
+            android:layout_weight="0.0125"
+            android:onClick="onSend"
+            android:text="@string/sendText" />
 
         <TextView
             android:id="@+id/messageTextView"
