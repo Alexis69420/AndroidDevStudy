@@ -6,4 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".intentionRecieve">
 
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="727dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waiting"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="375dp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

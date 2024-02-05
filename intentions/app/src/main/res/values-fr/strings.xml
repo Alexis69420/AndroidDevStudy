@@ -2,4 +2,5 @@
 <resources>
     <string name="sendText">Envoyer</string>
     <string name="message_hint">Entrez votre message ici</string>
+    <string name="waiting">En attente</string>
 </resources>
