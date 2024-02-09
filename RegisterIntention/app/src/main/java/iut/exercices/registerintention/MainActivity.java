@@ -23,17 +23,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    protected void changeUserInfo(View view) {
+    public void changeUserInfo(View view) {
         Intent intent = new Intent(this, Modify.class);
         myIntentsLauncher.launch(intent);
     }
 
-    protected void changeUserAddress(View view) {
+    public void changeUserAddress(View view) {
         Intent intent = new Intent(this, UserInfo.class);
         myIntentsLauncher.launch(intent);
     }
 
-    protected void onCancel(View view) {
+    public void onCancel(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         myIntentsLauncher.launch(intent);
     }
