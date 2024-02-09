@@ -22,4 +22,9 @@ public class UserInfo extends AppCompatActivity {
             }
         });
     }
+
+    public void onCancel(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        myIntentsLauncher.launch(intent);
+    }
 }
