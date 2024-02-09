@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +26,7 @@ public class UserInfo extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private Button modify;
 
     public UserInfo() {
         // Required empty public constructor
@@ -58,7 +62,24 @@ public class UserInfo extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_info, container, false);
+        View nonRootView = inflater.inflate(R.layout.fragment_user_info, container, false);
+        modify = nonRootView.findViewById(R.id.button3);
+        modify.setOnClickListener(modifyListener);
+        return nonRootView;
     }
+
+    private View.OnClickListener modifyListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            EditText name = getView().findViewById(R.id.name);
+            EditText firstname = getView().findViewById(R.id.firstname);
+            EditText phNumber = getView().findViewById(R.id.phNumber);
+            TextView nameView = getActivity().findViewById(R.id.nameView);
+            TextView firstnameView = getActivity().findViewById(R.id.firstnameView);
+            TextView phNumberView = getActivity().findViewById(R.id.phNumberView);
+            nameView.setText(name.getText());
+            firstnameView.setText(firstname.getText());
+            phNumberView.setText(phNumber.getText());
+        }
+    };
 }

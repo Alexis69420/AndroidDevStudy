@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +26,8 @@ public class UserAdress extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private Button modify;
 
     public UserAdress() {
         // Required empty public constructor
@@ -58,7 +63,28 @@ public class UserAdress extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_adress, container, false);
+        View nonRootView = inflater.inflate(R.layout.fragment_user_adress, container, false);
+        this.modify = nonRootView.findViewById(R.id.button2);
+        this.modify.setOnClickListener(onModify);
+        return nonRootView;
+
     }
+
+    private View.OnClickListener onModify = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            EditText hNumber = getView().findViewById(R.id.hNumber);
+            EditText street = getView().findViewById(R.id.street);
+            EditText pCode = getView().findViewById(R.id.pCode);
+            EditText city = getView().findViewById(R.id.city);
+            TextView hNumberView = getActivity().findViewById(R.id.hNumberView);
+            TextView streetView = getActivity().findViewById(R.id.streetView);
+            TextView pCodeView = getActivity().findViewById(R.id.pCodeView);
+            TextView cityView = getActivity().findViewById(R.id.cityView);
+            hNumberView.setText(hNumber.getText());
+            streetView.setText(street.getText());
+            pCodeView.setText(pCode.getText());
+            cityView.setText(city.getText());
+        }
+    };
 }

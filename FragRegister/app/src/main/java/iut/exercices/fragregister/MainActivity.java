@@ -17,19 +17,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView nameView = findViewById(R.id.nameView);
-        TextView firstnameView = findViewById(R.id.firstnameView);
-        TextView phNumberView = findViewById(R.id.phNumberView);
-        TextView hNumberView = findViewById(R.id.hNumberView);
-        TextView streetView = findViewById(R.id.streetView);
-        TextView pCodeView = findViewById(R.id.pCodeView);
-        TextView cityView = findViewById(R.id.cityView);
-        
-    }
-
-    public void changeUserInfo(View view) {
-    }
-
-    public void changeUserAddress(View view) {
     }
 }

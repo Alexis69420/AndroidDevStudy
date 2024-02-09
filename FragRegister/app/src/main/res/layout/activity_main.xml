@@ -46,18 +46,10 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView"
-            android:name="iut.exercices.fragregister.PersonModifyFragment"
+            android:name="iut.exercices.fragregister.UserInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:onClick="changeUserInfo"
-            android:text="@string/change" />
 
         <TextView
             android:id="@+id/hNumberView"
@@ -88,12 +80,12 @@
             android:layout_weight="1"
             android:text="@string/noInfo" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="100dp"
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView2"
+            android:name="iut.exercices.fragregister.UserAdress"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:onClick="changeUserAddress"
-            android:text="@string/change" />
+            android:layout_weight="1" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
