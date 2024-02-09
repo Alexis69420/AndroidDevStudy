@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">RegisterIntention</string>
     <string name="change">Change</string>
+    <string name="name">Name :</string>
+    <string name="firstName">Firstname :</string>
+    <string name="phNumber">Phone number :</string>
+    <string name="hNumber">House number :</string>
+    <string name="street">Street :</string>
+    <string name="pCode">Postal code :</string>
+    <string name="city">City :</string>
 </resources>

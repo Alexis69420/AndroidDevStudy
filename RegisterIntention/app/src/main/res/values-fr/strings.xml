@@ -2,4 +2,11 @@
 <resources>
     <string name="app_name">RegisterIntention</string>
     <string name="change">Modifier</string>
+    <string name="name">Nom :</string>
+    <string name="firstName">Prénom :</string>
+    <string name="phNumber">N° de téléphone :</string>
+    <string name="hNumber">Numéro de maison :</string>
+    <string name="street">Rue :</string>
+    <string name="pCode">Code postal :</string>
+    <string name="city">Ville :</string>
 </resources>
