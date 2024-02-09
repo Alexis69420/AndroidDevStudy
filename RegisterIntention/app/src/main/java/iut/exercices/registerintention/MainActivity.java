@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, UserInfo.class);
         myIntentsLauncher.launch(intent);
     }
+
+    protected void onCancel(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        myIntentsLauncher.launch(intent);
+    }
 }
