@@ -28,31 +28,30 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="@string/user_info_name" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="@string/user_info_firstName" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:layout_weight="1"
-            />
+            android:text="@string/user_info_phNumber" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="@string/change"
             android:layout_weight="0.5"
-            />
+            android:onClick="changeUserInfo"
+            android:text="@string/change" />
 
     </LinearLayout>
 
@@ -68,36 +67,40 @@
         >
 
         <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/user_info_hNumber" />
+
+        <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:layout_weight="1"
-            />
+            android:text="@string/user_info_street" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:layout_weight="1"
-            />
+            android:text="@string/user_info_city" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:layout_weight="1"
-            />
+            android:text="@string/user_info_pCode" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="@string/change"
             android:layout_weight="0.5"
-            />
+            android:onClick="changeUserAddress"
+            android:text="@string/change" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
