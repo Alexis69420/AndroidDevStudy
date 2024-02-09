@@ -9,4 +9,5 @@
     <string name="street">Rue :</string>
     <string name="pCode">Code postal :</string>
     <string name="city">Ville :</string>
+    <string name="cancel">Annuler</string>
 </resources>
