@@ -4,6 +4,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -40,7 +41,7 @@ public class Modify extends AppCompatActivity {
         intent.putExtra("name", nameStr);
         intent.putExtra("firstname", firstnameStr);
         intent.putExtra("phNumber", phNumberStr);
-        intent.putExtra("class", "modify");
-        myIntentsLauncher.launch(intent);
+        setResult(Activity.RESULT_OK, intent);
+        finish();
     }
 }

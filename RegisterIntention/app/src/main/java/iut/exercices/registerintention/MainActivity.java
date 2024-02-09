@@ -6,6 +6,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,25 +14,19 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String[] userInfo = new String[7];
-
-    boolean firstTime = true;
-
     private ActivityResultLauncher<Intent> myIntentsLauncher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView nameText = findViewById(R.id.nameView);
-        TextView surnameText = findViewById(R.id.firstnameView);
-        TextView telephoneText = findViewById(R.id.pCodeView);
-        TextView addressNumberText = findViewById(R.id.hNumberView);
-        TextView addressNameText = findViewById(R.id.streetView);
-        TextView addressPostalText = findViewById(R.id.pCodeView);
-        TextView cityText = findViewById(R.id.cityView);
-
-        // initialisation du lanceur et traitement des réponses aux intentions
+        TextView nameView = findViewById(R.id.nameView);
+        TextView firstnameView = findViewById(R.id.firstnameView);
+        TextView phNumberView = findViewById(R.id.phNumberView);
+        TextView hNumberView = findViewById(R.id.hNumberView);
+        TextView streetView = findViewById(R.id.streetView);
+        TextView pCodeView = findViewById(R.id.pCodeView);
+        TextView cityView = findViewById(R.id.cityView);
         myIntentsLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 new ActivityResultCallback<ActivityResult>() {
@@ -42,25 +37,25 @@ public class MainActivity extends AppCompatActivity {
                             for (String key : data.getExtras().keySet()) {
                                 switch (key) {
                                     case "name":
-                                        nameText.setText(data.getExtras().getString("name"));
+                                        nameView.setText(data.getStringExtra("name"));
                                         break;
-                                    case "surname":
-                                        surnameText.setText(data.getExtras().getString("surname"));
+                                    case "firstname":
+                                        firstnameView.setText(data.getStringExtra("firstname"));
                                         break;
-                                    case "telephone":
-                                        telephoneText.setText(data.getExtras().getString("telephone"));
+                                    case "phNumber":
+                                        phNumberView.setText(data.getStringExtra("phNumber"));
                                         break;
-                                    case "addressNumber":
-                                        addressNumberText.setText(data.getExtras().getString("addressNumber"));
+                                    case "hNumber":
+                                        hNumberView.setText(data.getStringExtra("hNumber"));
                                         break;
-                                    case "addressName":
-                                        addressNameText.setText(data.getExtras().getString("addressName"));
+                                    case "street":
+                                        streetView.setText(data.getStringExtra("street"));
                                         break;
-                                    case "addressPostal":
-                                        addressPostalText.setText(data.getExtras().getString("addressPostal"));
+                                    case "pCode":
+                                        pCodeView.setText(data.getStringExtra("pCode"));
                                         break;
                                     case "city":
-                                        cityText.setText(data.getExtras().getString("city"));
+                                        cityView.setText(data.getStringExtra("city"));
                                         break;
                                 }
                             }
