@@ -10,4 +10,11 @@
     <string name="pCode">Code postal :</string>
     <string name="city">Ville :</string>
     <string name="cancel">Annuler</string>
+    <string name="user_info_name">Pas d\'informations</string>
+    <string name="user_info_firstName">Pas d\'informations</string>
+    <string name="user_info_phNumber">Pas d\'informations</string>
+    <string name="user_info_hNumber">Pas d\'informations</string>
+    <string name="user_info_street">Pas d\'informations</string>
+    <string name="user_info_pCode">Pas d\'informations</string>
+    <string name="user_info_city">Pas d\'informations</string>
 </resources>
