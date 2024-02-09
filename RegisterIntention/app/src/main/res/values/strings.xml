@@ -9,4 +9,11 @@
     <string name="pCode">Postal code :</string>
     <string name="city">City :</string>
     <string name="cancel">Cancel</string>
+    <string name="user_info_name">No information</string>
+    <string name="user_info_firstName">No information</string>
+    <string name="user_info_phNumber">No information</string>
+    <string name="user_info_hNumber">No information</string>
+    <string name="user_info_street">No information</string>
+    <string name="user_info_pCode">No information</string>
+    <string name="user_info_city">No information</string>
 </resources>
