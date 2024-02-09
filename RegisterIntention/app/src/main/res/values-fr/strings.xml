@@ -10,4 +10,5 @@
     <string name="pCode">Code postal :</string>
     <string name="city">Ville :</string>
     <string name="cancel">Annuler</string>
+    <string name="noInfo">Pas d\'information disponible</string>
 </resources>
